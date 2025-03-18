@@ -1,6 +1,8 @@
+const { default: serverString } = require("./url");
+
 let token = localStorage.getItem('token')
 const call = async()=>{
-    const result = await fetch('https://blood-donation-backend-beta.vercel.app/api/userData/getCurrentUserdata',{
+    const result = await fetch(`${serverString}/api/userData/getCurrentUserdata`,{
             method:'GET',
             headers:{
                     'Content-Type': 'application/json',

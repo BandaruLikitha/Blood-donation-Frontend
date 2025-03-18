@@ -16,7 +16,7 @@ const form1 = document.getElementById('login')
         }
         console.log(obj);
         console.log(JSON.stringify(obj));
-        const result = await fetch('https://blood-donation-backend-beta.vercel.app/api/user/login',{
+        const result = await fetch(`${serverString}/api/user/login`,{
             method:'POST',
             headers:{
                 'content-type': 'application/json',

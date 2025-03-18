@@ -1,4 +1,4 @@
-fetch("https://blood-donation-backend-beta.vercel.app/api/hospital/gethospital",{
+fetch(`${serverString}/api/hospital/gethospital`,{
     method: 'GET',
   headers: {
       'Accept': 'application/json',

@@ -31,7 +31,7 @@ const form1 = document.getElementById('my-data-form')
         console.log(obj);
         console.log(JSON.stringify(obj));
         console.log(token);
-        const result = await fetch('https://blood-donation-backend-beta.vercel.app/api/userData/createUserData',{
+        const result = await fetch(`${serverString}/api/userData/createUserData`,{
             method:'POST',
             headers:{
                     'Content-Type': 'application/json',
